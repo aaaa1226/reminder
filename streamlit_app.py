@@ -4,7 +4,7 @@ import datetime
 import openai
 
 # Set your OpenAI API key
-openai.api_key = "your_openai_api_key"
+openai.api_key = st.secrets["APIKEY"]
 
 # Initialize session state for reminders
 if 'reminders' not in st.session_state:
